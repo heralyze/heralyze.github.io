@@ -89,6 +89,28 @@
             background: #ccc;
         }
 
+        .ai-bubble input {
+            flex: 1;
+            /* input melebar isi ruang */
+            min-width: 150px;
+            /* batas minimum biar tidak terlalu kecil */
+            padding: 10px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            margin-bottom: 10px;
+        }
+
+        .ai-bubble button {
+            flex: 0 0 auto;
+            /* tombol ukurannya tetap */
+            padding: 10px 15px;
+            border: none;
+            border-radius: 5px;
+            background: #f26522;
+            color: white;
+            cursor: pointer;
+        }
+
         /* NAV */
         nav {
             position: fixed;
@@ -1708,7 +1730,6 @@
         </div>
     </section>
 
-    <!-- AI ANALISIS -->
     <section class="ai-section" id="ai">
         <div class="ai-grid">
             <div class="fade-up">
@@ -1753,32 +1774,41 @@
                 <div
                     style="font-size:12px;color:rgba(255,255,255,0.4);margin-bottom:16px;letter-spacing:0.08em;text-transform:uppercase">
                     Heralyze</div>
+                <div class="ai-bubble user">
+                    <div class="ai-icon">🧑</div>
+                    <div>
+                        <div id="chat-box">
+                            <div class="msg ai">Halo! Saya Heralyze, sahabat digitalmu. Ketik sesuatu untuk mulai
+                                berbagi
+                                cerita.</div>
+                            <br>
+                            <hr>
+                            <br>
+                        </div>
+                    </div>
+                </div>
                 <div class="ai-bubble">
                     <div class="ai-icon">🤖</div>
-                    <div id="chat-box">
-                        <div class="msg ai">Halo! Saya Heralyze, sahabat digitalmu. Ketik sesuatu untuk mulai berbagi
-                            cerita.</div>
-                        <br>
-                        <hr>
-                        <br>
+                    <div> <input type="text" id="userInput" placeholder="Tanya sesuatu..." autocomplete="off">
+                        <button id="sendBtn">Kirim</button>
                     </div>
                 </div>
                 <div class="ai-typing">
                     <span></span><span></span><span></span>
-                </div>
-                <div class="ai-bubble user">
-                    <div class="ai-icon">🧑</div>
-                    <div class="input-area">
-                        <input type="text" id="userInput" placeholder="Tanya sesuatu..." autocomplete="off">
-                        <button id="sendBtn">Kirim</button>
-                    </div>
                 </div>
                 <div style="margin-top:20px;padding-top:20px;border-top:1px solid rgba(255,255,255,0.1)">
                     <div style="font-size:12px;color:rgba(255,255,255,0.4);margin-bottom:12px">Rekomendasi Terdeteksi:
                     </div>
                     <div style="display:flex;flex-wrap:wrap;gap:8px">
                         <span
-                            style="background:rgba(83,74,183,0.2);border:1px solid rgba(83,74,183,0.3);padding:6px 14px;border-radius:50px;font-size:12px;color:#AFA9EC">Konseling</span>
+                            style="background:rgba(29,158,117,0.2);border:1px solid rgba(29,158,117,0.3);padding:6px 14px;border-radius:50px;font-size:12px;color:#9FE1CB">Konseling
+                            Online</span>
+                        <span
+                            style="background:rgba(83,74,183,0.2);border:1px solid rgba(83,74,183,0.3);padding:6px 14px;border-radius:50px;font-size:12px;color:#AFA9EC">Edukasi
+                            Sosial</span>
+                        <span
+                            style="background:rgba(186,117,23,0.2);border:1px solid rgba(186,117,23,0.3);padding:6px 14px;border-radius:50px;font-size:12px;color:#FAC775">Peer
+                            Mentor</span>
                     </div>
                 </div>
                 <div style="margin-top:16px;padding:14px;background:rgba(255,255,255,0.05);border-radius:12px">
@@ -1798,7 +1828,7 @@
     <!-- REGISTER FORM -->
     <section class="register-section" id="daftar">
         <div class="register-content">
-            <h2 class="fade-up">Mulai Perjalananmu</h2>
+            <h2 class="fade-up">Heralyze</h2>
             <p class="fade-up">Berbagi cerita lebih dalam bersama pendamping profesional.</p>
             <div class="register-form fade-up">
                 <div class="form-row">
@@ -1882,7 +1912,6 @@
 
         const API_KEY = "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";
 
-        // Proxy untuk menghindari CORS error di browser
         const PROXY = "https://cors-anywhere.herokuapp.com/";
         const API_URL = "https://api.groq.com/openai/v1/chat/completions";
 
