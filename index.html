@@ -5,11 +5,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Hera — Pendampingan</title>
-     <link rel="icon" type="image/png" href="/image/logo.png">
+    <link rel="icon" type="image/png" href="/image/logo.png">
     <link
         href="https://fonts.googleapis.com/css2?family=Sora:wght@300;400;500;600;700;800&family=DM+Sans:ital,wght@0,300;0,400;0,500;1,300&display=swap"
         rel="stylesheet">
-        
+
     <style>
         :root {
             --teal: #0F6E56;
@@ -39,6 +39,7 @@
         html {
             scroll-behavior: smooth;
         }
+
         * {
             margin: 0;
             padding: 0;
@@ -59,6 +60,33 @@
         h4,
         h5 {
             font-family: 'Sora', sans-serif;
+        }
+
+        .input-area {
+            display: flex;
+            gap: 8px;
+        }
+
+        input {
+            flex: 1;
+            padding: 12px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            outline: none;
+        }
+
+        button {
+            padding: 10px 20px;
+            background: #1D9E75;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-weight: bold;
+        }
+
+        button:disabled {
+            background: #ccc;
         }
 
         /* NAV */
@@ -1431,8 +1459,8 @@
     <nav>
         <a href="#" class="nav-logo"><img src="/image/logo-hera.png" style="width: 50px;" alt="Logo"></span>Hera</a>
         <div class="nav-links">
-            <a href="#screening" >Screening</a>
-            <a href="#ai" >Heralyze</a>
+            <a href="#screening">Screening</a>
+            <a href="#ai">Heralyze</a>
             <a href="#daftar" class="nav-cta">Mulai Perjalananmu</a>
         </div>
     </nav>
@@ -1445,7 +1473,8 @@
         <div class="hero-content fade-up">
             <div class="hero-badge"><span class="pulse"></span>Platform Pendampingan #1</div>
             <h1>Setiap <em>Cerita</em> Layak Untuk <em>Didengar</em></h1>
-            <p>Hera adalah platform digital yang menyediakan ruang aman untuk berbagi cerita, mengekspresikan perasaan mereka, dan menerima dukungan tanpa takut dihakimi.</p>
+            <p>Hera adalah platform digital yang menyediakan ruang aman untuk berbagi cerita, mengekspresikan perasaan
+                mereka, dan menerima dukungan tanpa takut dihakimi.</p>
             <div class="hero-stats">
                 <div class="stat">
                     <div class="stat-num">15.5K+</div>
@@ -1468,13 +1497,15 @@
         <div class="section-header fade-up">
             <div class="section-label">Mulai dari sini</div>
             <h2 class="section-title">Bagaimana Hera Bekerja?</h2>
-            <p class="section-sub">Hera membantu mengekspresikan diri, memahami perasaan, dan mendapatkan dukungan melalui fitur yang aman, anonim, dan mudah digunakan.</p>
+            <p class="section-sub">Hera membantu mengekspresikan diri, memahami perasaan, dan mendapatkan dukungan
+                melalui fitur yang aman, anonim, dan mudah digunakan.</p>
         </div>
         <div class="reg-grid fade-up">
             <div class="role-card ortu">
                 <div class="role-icon">🧠</div>
                 <div class="role-title">Screening</div>
-                <div class="role-desc">Kenali kondisi diri melalui pertanyaan interaktif yang membantu refleksi diri.</div>
+                <div class="role-desc">Kenali kondisi diri melalui pertanyaan interaktif yang membantu refleksi diri.
+                </div>
             </div>
             <div class="role-card siswa">
                 <div class="role-icon">💬</div>
@@ -1499,7 +1530,8 @@
         <div class="section-header fade-up" style="text-align:center; max-width:600px; margin: 0 auto 48px;">
             <div class="section-label">Tes Screening Awal</div>
             <h2 class="section-title">Kenali Kondisimu</h2>
-            <p class="section-sub" style="max-width:100%">Kuesioner singkat dengan lima aspek untuk membantu memahami kondisi diri, interaksi sosial, dan potensi risiko secara lebih menyeluruh.</p>
+            <p class="section-sub" style="max-width:100%">Kuesioner singkat dengan lima aspek untuk membantu memahami
+                kondisi diri, interaksi sosial, dan potensi risiko secara lebih menyeluruh.</p>
         </div>
         <div class="quiz-container fade-up">
             <!-- Progress -->
@@ -1682,7 +1714,8 @@
             <div class="fade-up">
                 <div class="section-label">Heralyze</div>
                 <h2 class="section-title">Heralyze System</h2>
-                <p class="section-sub">Heralyze membantu memahami hasil secara menyeluruh dan memberikan rekomendasi yang sesuai untuk mendukung pemahaman diri dan langkah yang lebih baik.</p>
+                <p class="section-sub">Heralyze membantu memahami hasil secara menyeluruh dan memberikan rekomendasi
+                    yang sesuai untuk mendukung pemahaman diri dan langkah yang lebih baik.</p>
                 <div class="ai-recs">
                     <div class="ai-rec-item">
                         <div class="ai-rec-icon" style="background:rgba(29,158,117,0.2)">🧠</div>
@@ -1695,14 +1728,16 @@
                         <div class="ai-rec-icon" style="background:rgba(83,74,183,0.2)">📚</div>
                         <div>
                             <h4>Cerita & Perspektif</h4>
-                            <p>Kumpulan cerita dan sudut pandang yang membantu kamu melihat masalah dari sisi yang berbeda.</p>
+                            <p>Kumpulan cerita dan sudut pandang yang membantu kamu melihat masalah dari sisi yang
+                                berbeda.</p>
                         </div>
                     </div>
                     <div class="ai-rec-item">
                         <div class="ai-rec-icon" style="background:rgba(186,117,23,0.2)">🎯</div>
                         <div>
                             <h4>Langkah Positif</h4>
-                            <p>Panduan sederhana untuk membantu kamu mengambil langkah kecil menuju perubahan yang lebih baik.</p>
+                            <p>Panduan sederhana untuk membantu kamu mengambil langkah kecil menuju perubahan yang lebih
+                                baik.</p>
                         </div>
                     </div>
                     <div class="ai-rec-item">
@@ -1718,16 +1753,25 @@
                 <div
                     style="font-size:12px;color:rgba(255,255,255,0.4);margin-bottom:16px;letter-spacing:0.08em;text-transform:uppercase">
                     Heralyze</div>
-                <div class="ai-bubble user">
-                    <div class="ai-icon">🧑</div>
-                    <div>Aku ngerasa nggak ada yang benar-benar ngerti aku...</div>
-                </div>
                 <div class="ai-bubble">
                     <div class="ai-icon">🤖</div>
-                    <div>Perasaan tidak dipahami bisa terasa sangat berat. Di sini kamu bisa berbagi dengan bebas, dan kita bisa pelan-pelan mencoba memahami apa yang kamu rasakan...</div>
+                    <div id="chat-box">
+                        <div class="msg ai">Halo! Saya Heralyze, sahabat digitalmu. Ketik sesuatu untuk mulai berbagi
+                            cerita.</div>
+                        <br>
+                        <hr>
+                        <br>
+                    </div>
                 </div>
                 <div class="ai-typing">
                     <span></span><span></span><span></span>
+                </div>
+                <div class="ai-bubble user">
+                    <div class="ai-icon">🧑</div>
+                    <div class="input-area">
+                        <input type="text" id="userInput" placeholder="Tanya sesuatu..." autocomplete="off">
+                        <button id="sendBtn">Kirim</button>
+                    </div>
                 </div>
                 <div style="margin-top:20px;padding-top:20px;border-top:1px solid rgba(255,255,255,0.1)">
                     <div style="font-size:12px;color:rgba(255,255,255,0.4);margin-bottom:12px">Rekomendasi Terdeteksi:
@@ -1790,8 +1834,10 @@
     <footer>
         <div class="footer-grid">
             <div>
-                <div class="footer-logo"><img src="/image/logo-hera.png" style="width: 50px;" alt="Logo"></span>Hera</div>
-                <div class="footer-tagline">Hera adalah platform digital yang menyediakan ruang aman bagi remaja untuk berbagi cerita, mengekspresikan perasaan mereka, dan menerima dukungan tanpa takut dihakimi.</div>
+                <div class="footer-logo"><img src="/image/logo-hera.png" style="width: 50px;" alt="Logo"></span>Hera
+                </div>
+                <div class="footer-tagline">Hera adalah platform digital yang menyediakan ruang aman bagi remaja untuk
+                    berbagi cerita, mengekspresikan perasaan mereka, dan menerima dukungan tanpa takut dihakimi.</div>
             </div>
             <div class="footer-col">
                 <h5>Platform</h5>
@@ -1833,6 +1879,72 @@
     </div>
 
     <script>
+
+        const API_KEY = "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";
+
+        // Proxy untuk menghindari CORS error di browser
+        const PROXY = "https://cors-anywhere.herokuapp.com/";
+        const API_URL = "https://api.groq.com/openai/v1/chat/completions";
+
+        const chatBox = document.getElementById("chat-box");
+        const userInput = document.getElementById("userInput");
+        const sendBtn = document.getElementById("sendBtn");
+
+        function addMessage(text, sender) {
+            const div = document.createElement("div");
+            div.classList.add("msg", sender);
+            div.innerText = text;
+            chatBox.appendChild(div);
+            chatBox.scrollTop = chatBox.scrollHeight;
+        }
+
+        async function chat() {
+            const message = userInput.value.trim();
+            if (!message) return;
+
+            addMessage(message, "user");
+            userInput.value = "";
+            sendBtn.disabled = true;
+
+            try {
+                const response = await fetch(PROXY + API_URL, {
+                    method: "POST",
+                    headers: {
+                        "Authorization": `Bearer ${API_KEY}`,
+                        "Content-Type": "application/json",
+                        "X-Requested-With": "XMLHttpRequest"
+                    },
+                    body: JSON.stringify({
+                        model: "llama-3.1-8b-instant",
+                        messages: [
+                            { role: "system", content: "Kamu adalah asisten cerdas yang ramah." },
+                            { role: "user", content: message }
+                        ]
+                    })
+                });
+
+                if (!response.ok) {
+                    const errData = await response.json();
+                    throw new Error(errData.error?.message || "Gagal menghubungi server");
+                }
+
+                const data = await response.json();
+                const aiResponse = data.choices[0].message.content;
+                addMessage(aiResponse, "ai");
+
+            } catch (error) {
+                console.error(error);
+                addMessage("Maaf, terjadi kesalahan: " + error.message, "ai");
+                addMessage("Pastikan kamu sudah klik link 'Aktifkan Akses Proxy' di atas.", "ai");
+            } finally {
+                sendBtn.disabled = false;
+            }
+        }
+
+        sendBtn.onclick = chat;
+        userInput.addEventListener("keypress", (e) => {
+            if (e.key === "Enter") chat();
+        });
         // Quiz logic
         const answers = {};
         function selectOpt(el, step, val) {
