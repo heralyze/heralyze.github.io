@@ -1910,7 +1910,7 @@
 
     <script>
 
-        const API_KEY = "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";
+        const API_KEY = "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";
 
         const PROXY = "https://cors-anywhere.herokuapp.com/";
         const API_URL = "https://api.groq.com/openai/v1/chat/completions";
@@ -1965,6 +1965,7 @@
                 console.error(error);
                 addMessage("Maaf, terjadi kesalahan: " + error.message, "ai");
                 addMessage("Pastikan kamu sudah klik link 'Aktifkan Akses Proxy' di atas.", "ai");
+                // addMessage("Maaf, Teman ceritamu sedang istirahat.")
             } finally {
                 sendBtn.disabled = false;
             }
