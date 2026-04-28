@@ -1947,7 +1947,9 @@
 
     <script>
 
-        const API_KEY = "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";
+        //DEBUG: https://cors-anywhere.herokuapp.com/corsdemo
+
+        const API_KEY = "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";
 
         const PROXY = "https://cors-anywhere.herokuapp.com/";
         const API_URL = "https://api.groq.com/openai/v1/chat/completions";
@@ -2027,6 +2029,7 @@
         userInput.addEventListener("keypress", (e) => {
             if (e.key === "Enter") chat();
         });
+
         // Quiz logic
         const answers = {};
         function selectOpt(el, step, val) {
